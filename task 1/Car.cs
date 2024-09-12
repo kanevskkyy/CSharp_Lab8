@@ -8,8 +8,8 @@ namespace task_1
 {
     internal class Car
     {
-        double fuelAmout {  get; set; }
-        double fuelConspation { get; set; }
+        public double fuelAmout {  get; set; }
+        public double fuelConspation { get; set; }
 
         virtual public void addFuel(double fuel)
         {
