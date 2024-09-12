@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace task_1
 {
-    internal class passengerCar : Car
+    internal class PassengerCar : Car
     {
-        public passengerCar(double fuelAmout, double fuelConspation)
+        public PassengerCar(double fuelAmout, double fuelConspation)
         {
             this.fuelAmout = fuelAmout;
             this.fuelConspation = fuelConspation + 0.9;
