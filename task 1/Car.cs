@@ -16,7 +16,7 @@ namespace task_1
             fuelAmout += fuel;
         }
 
-        public void driveCar(double distance)
+        virtual public void driveCar(double distance)
         {
             if(fuelAmout - distance * fuelConspation > 0)
             {
