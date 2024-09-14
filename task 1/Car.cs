@@ -11,6 +11,7 @@ namespace task_1
         public double fuelAmout {  get; set; }
         public double fuelConspation { get; set; }
 
+        public double fuelCapacity { get; set; }
         virtual public void addFuel(double fuel)
         {
             fuelAmout += fuel;
