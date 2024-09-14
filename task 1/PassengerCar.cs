@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace task_1
 {
-    internal class Truck : Car
+    internal class PassengerCar : Car
     {
-        public Truck(double fuelAmout, double fuelConspation, double fuelCapicity)
+        public PassengerCar(double fuelAmout, double fuelConspation, double fuelCapicity)
         {
-            this.fuelAmout = fuelAmout * 0.95;
-            this.fuelConspation = fuelConspation + 1.6;
+            this.fuelAmout = fuelAmout;
+            this.fuelConspation = fuelConspation + 0.9;
             this.fuelCapacity = fuelCapicity;
         }
+
         public override void driveCar(double distance)
         {
+
             if (fuelAmout - distance * fuelConspation > 0)
             {
                 fuelAmout -= distance * fuelConspation;
-                Console.WriteLine($"Truck travelled {distance} km");
+                Console.WriteLine($"Car travelled {distance} km");
             }
-            else Console.WriteLine("Truck need refueling");
+            else Console.WriteLine("Car need refueling");
         }
     }
 }
