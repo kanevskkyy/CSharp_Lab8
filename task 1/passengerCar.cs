@@ -15,6 +15,12 @@ namespace task_1
             this.fuelCapacity = fuelCapicity;
         }
 
+        public PassengerCar(double fuelAmout, double fuelConspation)
+        {
+            this.fuelAmout = fuelAmout;
+            this.fuelConspation = fuelConspation + 0.9;
+        }
+
         public override void driveCar(double distance)
         {
 
