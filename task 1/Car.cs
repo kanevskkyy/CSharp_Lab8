@@ -14,7 +14,8 @@ namespace task_1
         public double fuelCapacity { get; set; }
         virtual public void addFuel(double fuel)
         {
-            fuelAmout += fuel;
+            if (fuel > fuelCapacity - fuelAmout) Console.WriteLine($"Cannot fit {fuel} fuel in the tank"); 
+            else fuelAmout += fuel;
         }
 
         virtual public void driveCar(double distance)

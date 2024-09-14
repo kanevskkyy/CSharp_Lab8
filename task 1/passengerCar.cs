@@ -8,14 +8,16 @@ namespace task_1
 {
     internal class PassengerCar : Car
     {
-        public PassengerCar(double fuelAmout, double fuelConspation)
+        public PassengerCar(double fuelAmout, double fuelConspation, double fuelCapicity)
         {
             this.fuelAmout = fuelAmout;
             this.fuelConspation = fuelConspation + 0.9;
+            this.fuelCapacity = fuelCapicity;
         }
 
         public override void driveCar(double distance)
         {
+
             if (fuelAmout - distance * fuelConspation > 0)
             {
                 fuelAmout -= distance * fuelConspation;
