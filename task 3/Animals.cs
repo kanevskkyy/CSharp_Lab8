@@ -46,6 +46,7 @@ namespace task_3
     class Owl : Bird
     {
         public Owl(string name, double weight, double wingSize) : base(name, weight, wingSize) { }
+
         public override void MakeSound()
         {
             Console.WriteLine("Hoot Hoot");
@@ -56,7 +57,7 @@ namespace task_3
             if (food is Meat)
             {
                 FoodEaten += food.Quantity;
-                Weight += 0.25;
+                Weight += food.Quantity * 0.25;
             }
             else
             {
@@ -77,7 +78,7 @@ namespace task_3
         public override void Eat(Food food)
         {
             FoodEaten += food.Quantity;
-            Weight += 0.35;
+            Weight += food.Quantity * 0.35;
         }
     }
 
@@ -110,7 +111,7 @@ namespace task_3
             if (food is Vegetable || food is Fruit)
             {
                 FoodEaten += food.Quantity;
-                Weight += 0.10;
+                Weight += food.Quantity * 0.10;
             }
             else
             {
@@ -133,7 +134,7 @@ namespace task_3
             if (food is Meat)
             {
                 FoodEaten += food.Quantity;
-                Weight += 0.40;
+                Weight += food.Quantity * 0.40;
             }
             else
             {
@@ -173,7 +174,7 @@ namespace task_3
             if (food is Vegetable || food is Meat)
             {
                 FoodEaten += food.Quantity;
-                Weight += 0.30;
+                Weight += food.Quantity * 0.30;
             }
             else
             {
@@ -197,7 +198,7 @@ namespace task_3
             if (food is Meat)
             {
                 FoodEaten += food.Quantity;
-                Weight += 1.00;
+                Weight += food.Quantity * 1.00;
             }
             else
             {
