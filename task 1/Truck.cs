@@ -14,6 +14,13 @@ namespace task_1
             this.fuelConspation = fuelConspation + 1.6;
             this.fuelCapacity = fuelCapicity;
         }
+
+        public Truck(double fuelAmout, double fuelConspation)
+        {
+            this.fuelAmout = fuelAmout * 0.95;
+            this.fuelConspation = fuelConspation + 1.6;
+        }
+
         public override void driveCar(double distance)
         {
             if (fuelAmout - distance * fuelConspation > 0)
